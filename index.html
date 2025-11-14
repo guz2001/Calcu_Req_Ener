@@ -10,17 +10,47 @@
 <body>
     <div class='container'>
         <main>
-            <h1>Calculadora Requerimientos Energeticos</h1>
-            <div class="calculadora" bg-rojo>
+            <div class="navegacion">
+                <h1 id="titulo">Calculadora Requerimientos Energeticos</h1>
+                <nav id="opciones">
+                    <ol>
+                        <li id ='principal'><a href="index.html">Principal</a></li>
 
+                        <li id="Informacion">Informacion</li>
+                    </ol>
+                </nav>
+                
             
             </div>
 
+            <div class="calculadora">
+            <form >
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre">
+            <label for ='edad'>peso</label>
+            <input type="number" id="edad">
+            <label for='peso'>peso</label>
+            <input type="number" id="peso">
+            <label for='altura'>altura</label>
+            <input type="number" id="altura">
+            <label for="actividad-fisica">Actividad fisica</label>
+            <input type="text" id="actividad-fisica">
+            <button type="submit" id="botonEnviar">ENVIAR</button><!--no necesita un label se llama a si mismo -->
+            </form>
+        </div>
+
+
+
+            
+            
+
         
-        <footer>
-            <h3>Copyright 2025</h3>
-        </footer>    
+              
+            </div>
         </main>
+        <footer id="footer">
+            <h3>Copyright 2025</h3>
+        </footer>  
 
     </div>
 </body>   
