@@ -1,9 +1,11 @@
-let express= require('express');
-let app= express();
+const express= require('express');
+const app= express();
+const mysql=require('mysql');
+const PORT=8080;
 
 app.get('/',(req,res)=>{
     res.send('conexion a express');
 });
-app.listen('3000',()=>{
-    console.log('se esta presenciando en el puerto 3000')
+app.listen(PORT,()=>{
+    console.log('se esta presenciando en el puerto  ${PORT}')
 });
